@@ -5,7 +5,7 @@ import Cards from '@/components/cards/page';
 const Home = () => {
   return (
     <>
-      <div className="h-screen z-20">
+      <div className="h-screen">
         <div className="top-wave">
           <svg
             data-name="Layer 1"
@@ -42,7 +42,7 @@ const Home = () => {
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
-          className="z-10 opacity-10 absolute top-0 w-1/2"
+          className="-z-10 opacity-10 absolute top-0 w-1/2"
         >
           <path
             fill="#fff"
