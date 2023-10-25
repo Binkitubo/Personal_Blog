@@ -50,7 +50,7 @@ const Home = () => {
             transform="translate(100 100)"
           />
         </svg>
-        <Cards className="mt-12" />
+        <Cards />
         <div className="text-end mr-5 text-white text-1xl">
           <h1>Made with love ♥</h1>
           <h2>David Bellver</h2>
