@@ -36,10 +36,10 @@ const Home = () => {
               <a href="https://www.etsy.com/shop/itsavilaart/?etsrc=sdt">
                 <BiLogoEtsy className="inline text-5xl ml-3 mt-1" />
               </a>
-              <div className='absolute mt-52 right-24'>
-                <Music />
-              </div>
             </p>
+            <div className="absolute mt-52 right-24">
+              <Music />
+            </div>
           </div>
           <img src="cat-vector.png" alt="Cat drawing" className="w-1/3 mr-60" />
         </div>
