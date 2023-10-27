@@ -4,23 +4,29 @@ import { GiEasterEgg } from 'react-icons/gi';
 import { AiFillPauseCircle } from 'react-icons/ai';
 
 const Music = () => {
-  const [audio] = useState(new Audio('depeche.mp3'));
+  const [audio] = useState<HTMLAudioElement | null>(
+    typeof Audio !== 'undefined' ? new Audio('depeche.mp3') : null
+  );
   const [isPlaying, setIsPlaying] = useState(false);
 
   const playSound = () => {
-    audio.play();
-    setIsPlaying(true);
+    if (audio) {
+      audio.play();
+      setIsPlaying(true);
+    }
   };
 
   const pauseSound = () => {
-    audio.pause();
-    setIsPlaying(false);
+    if (audio) {
+      audio.pause();
+      setIsPlaying(false);
+    }
   };
 
   return (
     <div>
       {isPlaying ? (
-        <button onClick={pauseSound} >
+        <button onClick={pauseSound}>
           <AiFillPauseCircle className='text-5xl text-white' />
         </button>
       ) : (
